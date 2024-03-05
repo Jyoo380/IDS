@@ -65,7 +65,7 @@ optimizer = AdamW(model.parameters(), lr=1e-5, no_deprecation_warning=True)
 
 # Training loop
 model.train()
-epochs = 0
+epochs = 6
 for epoch in range(epochs):
     for batch in train_dataloader:
         input_ids, token_type_ids, attention_mask, labels = batch
